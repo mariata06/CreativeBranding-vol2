@@ -1,0 +1,1204 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Здесь будут различные шрифты*/
+@font-face {
+    font-family: lato-regular;
+    /* Гарнитура шрифта */
+    src: url("../fonts/lato/lato-regular.ttf");
+    /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: lato-light;
+    /* Гарнитура шрифта */
+    src: url("../fonts/lato/lato-light.ttf");
+    /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: lato-bold;
+    /* Гарнитура шрифта */
+    src: url("../fonts/lato/lato-bold.ttf");
+    /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: sourcesanspro-regular;
+    /* Гарнитура шрифта */
+    src: url("../fonts/sourcesanspro/sourcesanspro-regular.otf");
+    /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: sourcesanspro-bold;
+    /* Гарнитура шрифта */
+    src: url("../fonts/sourcesanspro/sourcesanspro-bold.otf");
+    /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: sourcesanspro-light;
+    /* Гарнитура шрифта */
+    src: url("../fonts/sourcesanspro/sourcesanspro-light.ttf");
+    /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: 14775;
+    /* Гарнитура шрифта */
+    src: url("../fonts/lato/14775.otf");
+    /* Путь к файлу со шрифтом */
+}
+
+html {
+    overflow-x: hidden;
+    /*убирает горизонтальную полосу прокрутки*/
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+.container {
+    margin: 0px auto;
+    width: 1920px;
+}
+
+/* Блок Header */
+header {
+    width: 100%;
+    height: 1140px;
+    position: relative;
+}
+
+.slider {
+    background: url("../img/header-bg.png") #c0c0c0 bottom center fixed no-repeat;
+    /*z-index:10;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-color: rgb(51, 51, 51);*/
+    /*opacity: 0.502;*/
+    width: 100%;
+    height: 1080px;
+}
+
+/*Логотип, буква в ромбе, название сайта в общем блоке logo*/
+.logo {
+    height: 706px;
+    width: 437px;
+    /*На макете ширина блока Лого 430px, Название не вмещается*/
+    margin: 0 auto;
+    padding-top: 221px;
+    position: relative;
+}
+
+.frame img {
+    display: block;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+}
+
+.frame img:hover {
+    color: #ada074;
+    -webkit-filter: #ada074;
+            filter: #ada074;
+    -webkit-transition: 0.7s ease-out;
+    -o-transition: 0.7s ease-out;
+    transition: 0.7s ease-out;
+}
+
+.logo h1,
+p {
+    text-align: center;
+}
+
+.logo h1 {
+    padding-top: 142px;
+    font-family: "lato-regular", "Arial", sans-serif;
+    font-size: 34px;
+    color: #fff;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 1.2;
+    letter-spacing: 5.44px;
+}
+
+.logo h1:hover {
+    color: rgb(173, 160, 116);
+    -webkit-transition: 0.7s ease-out;
+    -o-transition: 0.7s ease-out;
+    transition: 0.7s ease-out;
+}
+
+.logo h1::after {
+    content: "";
+    display: block;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    height: 2px;
+    width: 105px;
+    background-color: #fff;
+    margin: 53px auto 0px auto;
+    text-align: center;
+}
+
+.logo p {
+    padding-top: 58px;
+    font-family: "lato-light", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    color: #fff;
+}
+
+.logo a {
+    text-align: center;
+    display: block;
+}
+
+.btn-readmore {
+    height: 47px;
+    width: 182px;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "lato-regular", "Arial", sans-serif;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+            transform: translate(-50%);
+}
+
+.slider .btn-readmore {
+    margin-top: 162px;
+}
+
+.btn-readmore:hover {
+    background: #ada074;
+    color: #fff;
+    border: 2px solid #ada074;
+    -webkit-transition: 0.7s ease-out;
+    -o-transition: 0.7s ease-out;
+    transition: 0.7s ease-out;
+}
+
+/*
+button[type="button"] {
+    height: 47px;
+    width: 182px;
+    margin-top: 162px;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "lato-regular", "Arial", sans-serif;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+}
+*/
+/*
+button[type="button"]:hover {
+    color: rgb(173, 160, 116); 
+    background: #fff;
+    border-color: rgb(173, 160, 116); 
+}
+*/
+
+button[type="button"]:active {
+    color: #3c3c3c;
+    background: #ada074;
+}
+
+.arrow-down {
+    padding-top: 30px;
+    display: inline;
+    /*animation: move 1.5s ease-out 0.8s infinite;*/
+    -webkit-animation: move 1.5s ease-out 0.7s infinite;
+            animation: move 1.5s ease-out 0.7s infinite;
+    opacity: 0;
+}
+
+@-webkit-keyframes move {
+    25% {
+        opacity: 1;
+    }
+
+    33% {
+        opacity: 1;
+        -webkit-transform: translateY(40px);
+                transform: translateY(40px);
+    }
+
+    67% {
+        opacity: 1;
+        -webkit-transform: translateY(40px);
+                transform: translateY(40px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(40px);
+                transform: translateY(40px);
+        /* scale3d(0.5, 0.5, 0.5);*/
+    }
+}
+
+@keyframes move {
+    25% {
+        opacity: 1;
+    }
+
+    33% {
+        opacity: 1;
+        -webkit-transform: translateY(40px);
+                transform: translateY(40px);
+    }
+
+    67% {
+        opacity: 1;
+        -webkit-transform: translateY(40px);
+                transform: translateY(40px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(40px);
+                transform: translateY(40px);
+        /* scale3d(0.5, 0.5, 0.5);*/
+    }
+}
+
+/****************************************************************************
+**********************************НАВИГАЦИЯ**********************************
+*****************************************************************************/
+nav {
+    height: 58px;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 1px solid #f2f2f2;
+    /*position: fixed;
+    z-index: 100;*/
+}
+
+nav ul {
+    width: 388px;
+    -ms-flex-item-align: center;
+        align-self: center;
+    padding-left: 420px;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+nav li {
+    text-transform: uppercase;
+    font-size: 15px;
+    /*font-family: "lato-bold", "Arial", sans-serif;*/
+    font-weight: bold;
+    display: inline-block;
+    font-family: "14775", "Arial", sans-serif;
+}
+
+nav a {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: "14775", "Arial", sans-serif;
+    font-weight: bold;
+    color: #3c3c3c;
+}
+
+nav a:hover {
+    color: rgb(173, 160, 116);
+    -webkit-transition: 0.7s ease-out;
+    -o-transition: 0.7s ease-out;
+    transition: 0.7s ease-out;
+}
+
+#onepage {
+    padding-left: 510px;
+    /*font-family: "sourcesanspro-bold", "Arial", sans-serif;*/
+    font-size: 26px;
+    font-weight: bold;
+    color: #3c3c3c;
+    text-transform: none;
+    text-decoration: none;
+    font-family: "14775", sans-serif;
+}
+
+#onepage:hover {
+    color: rgb(173, 160, 116);
+    -webkit-transition: 0.7s ease-out;
+    -o-transition: 0.7s ease-out;
+    transition: 0.7s ease-out;
+}
+
+/******************************************************************************
+******************************SECTION ABOUT US*********************************
+*******************************************************************************/
+#about {
+    /*padding-top: 80px;*/
+    width: 100%;
+    /*height: 750px;*/
+    background: #fff;
+    position: relative;
+}
+
+#about h2 {
+    padding-top: 133px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "lato-bold", "Arial", sans-serif;
+    font-size: 34px;
+    font-weight: bold;
+    color: black;
+    letter-spacing: 5.44px;
+}
+
+#about h2::after {
+    content: "";
+    display: block;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    height: 1px;
+    width: 81px;
+    background-color: black;
+    margin: 35px auto 0px auto;
+    text-align: center;
+}
+
+#about p {
+    padding-top: 38px;
+    font-size: 14px;
+    font-family: "lato-light", "Arial", sans-serif;
+    color: rgb(164, 164, 164);
+    line-height: 1.857;
+}
+
+#about .desighn {
+    background-color: #fff;
+    width: 900px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    position: relative;
+    padding-left: 510px;
+    padding-top: 76px;
+}
+
+#about .desighn_type {
+    width: 286px;
+    height: 100%;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 140px;
+}
+
+.border-img {
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+    border: 2px solid rgb(240, 240, 240);
+    text-align: center;
+    margin: auto;
+    position: relative;
+}
+
+.border-img:hover {
+    border: 2px solid #ada074;
+    -webkit-transition: 0.7s ease-out;
+    -o-transition: 0.7s ease-out;
+    transition: 0.7s ease-out;
+}
+
+/*если иконки  responsive, minimalist, free вставлять как обычные img формата png*/
+.desighn_type img {
+    width: 58px;
+    /*100px*/
+    height: 53px;
+    /*100px*/
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    display: block;
+    cursor: pointer;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*
+.desighn_type img::after {
+    content: "";
+    width: 100px;             
+    height: 100px;            
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid rgb(240, 240, 240);
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    margin: 0 auto;
+}
+.desighn_type img:hover {
+    border: 2px solid #ada074;
+    transition: 0.3s ease-out;
+}
+
+
+/*если иконки responsive, minimalist, free будут вставляться как svg формат */
+/*
+.about svg {
+	fill: #ada074;
+	align-self: flex-start;
+	display: block;
+	text-align: center;
+    margin: 0 auto;
+    border-radius: 150px;
+    border: 2px solid rgb(240, 240, 240);
+}
+*/
+
+/* если иконки responsive, minimalist, free - вставлять как svg*/
+/*
+.desighn_type svg {
+    padding-top: 30px;
+    /*position: absolute;
+    display: block;
+    align-items: center;
+	fill: #ada074;
+	align-self: flex-start;
+	/*display: block;
+	text-align: center;
+    margin: 0 auto;
+}
+*/
+/* если иконки то для них применяется псевдоэлемент ::before - окружность-обводка спереди иконки */
+/*
+.desighn_type::before {
+    content: "";
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid rgb(240, 240, 240);
+    position: relative;
+    display: block;
+    cursor: pointer;
+    margin: 0 auto;
+} 
+*/
+.desighn_type span {
+    padding-top: 57px;
+    font-family: "lato-regular", "Arial", sans-serif;
+    font-size: 26px;
+    letter-spacing: 4.16px;
+}
+
+.desighn_type span>a {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.desighn_type p {
+    font-family: "lato-light", "Arial", sans-serif;
+    font-size: 14px;
+    color: rgb(164, 164, 164);
+    padding-top: 36px;
+    line-height: 1.857;
+}
+
+/**************************************************************************
+*****************************SECTION PORTFOLIO*****************************
+***************************************************************************/
+#portfolio {
+    width: 100%;
+    height: 1636px;
+    /*background: #f3f3f3;*/
+    /*background-color: lightgreen;*/
+    background-color: #f3f3f3;
+    position: relative;
+    /*padding-left: 510px;
+    padding-right: 510px;*/
+}
+
+#portfolio h2 {
+    padding-top: 188px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "lato-bold", "Arial", sans-serif;
+    font-size: 34px;
+    font-weight: bold;
+    color: black;
+    letter-spacing: 5.44px;
+}
+
+#portfolio h2::after {
+    content: "";
+    display: block;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    height: 1px;
+    width: 81px;
+    background-color: black;
+    margin: 40px auto 0px auto;
+    text-align: center;
+}
+
+.grid {
+    margin: 0 auto;
+    margin-top: 76px;
+    /*display: flex;*/
+    /*flex-wrap: wrap;
+    align-items: flex-start;*/
+    /*border-left-style: solid #f3f3f3 510px;
+    border-right-style: solid #f3f3f3 510px;*/
+    width: 900px;
+    position: relative;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 200px 15px 200px 15px 100px 15px 100px 15px 100px 15px 100px 15px 100px;
+    grid-template-rows: 200px 200px 100px 100px 100px 100px 100px;
+    -ms-grid-columns: 1fr 15px 1fr 15px 285px;
+    grid-template-columns: repeat(2, 1fr) 285px;
+    grid-gap: 15px;
+    /*grid-template-rows: repeat(3, 1fr);*/
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.grid > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}
+
+.grid > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+}
+
+.grid > *:nth-child(3) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+}
+
+.grid > *:nth-child(4) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+}
+
+.grid > *:nth-child(5) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+}
+
+.grid > *:nth-child(6) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+}
+
+.grid > *:nth-child(7) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+}
+
+.grid > *:nth-child(8) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 3;
+}
+
+.grid > *:nth-child(9) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 5;
+}
+
+.grid > *:nth-child(10) {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+}
+
+.grid > *:nth-child(11) {
+    -ms-grid-row: 7;
+    -ms-grid-column: 3;
+}
+
+.grid > *:nth-child(12) {
+    -ms-grid-row: 7;
+    -ms-grid-column: 5;
+}
+
+.grid > *:nth-child(13) {
+    -ms-grid-row: 9;
+    -ms-grid-column: 1;
+}
+
+.grid > *:nth-child(14) {
+    -ms-grid-row: 9;
+    -ms-grid-column: 3;
+}
+
+.grid > *:nth-child(15) {
+    -ms-grid-row: 9;
+    -ms-grid-column: 5;
+}
+
+.grid > *:nth-child(16) {
+    -ms-grid-row: 11;
+    -ms-grid-column: 1;
+}
+
+.grid > *:nth-child(17) {
+    -ms-grid-row: 11;
+    -ms-grid-column: 3;
+}
+
+.grid > *:nth-child(18) {
+    -ms-grid-row: 11;
+    -ms-grid-column: 5;
+}
+
+.grid > *:nth-child(19) {
+    -ms-grid-row: 13;
+    -ms-grid-column: 1;
+}
+
+.grid > *:nth-child(20) {
+    -ms-grid-row: 13;
+    -ms-grid-column: 3;
+}
+
+.grid > *:nth-child(21) {
+    -ms-grid-row: 13;
+    -ms-grid-column: 5;
+}
+
+.project {
+    /*width: 285px;*/
+    /*margin: 0 15px 15px 0;
+    float: left;
+    position: relative;
+    /*height: 100%;*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+}
+
+.project:hover {
+    width: 285px;
+    /*height: 237px;*/
+    /*position: absolute;*/
+    background: rgba(173, 160, 116, 0.7);
+    -webkit-transition: 0.7s ease-out;
+    -o-transition: 0.7s ease-out;
+    transition: 0.7s ease-out;
+}
+
+.project-text {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    display: none;
+    color: white;
+}
+
+.project-text .project-name {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.project-text .project-description {
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.project:hover .project-text {
+    display: block;
+}
+
+.project:hover img {
+    opacity: 0;
+    -webkit-transition: 0.7s ease-out;
+    -o-transition: 0.7s ease-out;
+    transition: 0.7s ease-out;
+}
+
+.project:hover .transparent-img {
+    opacity: 30%;
+    -webkit-transition: 0.7s ease-out;
+    -o-transition: 0.7s ease-out;
+    transition: 0.7s ease-out;
+}
+
+/*
+.progect:hover {
+    opacity: var(--opacity);
+}
+
+.progect:hover>.no-text {
+    --opacity: 0.5;
+}
+*/
+.grid img {
+    width: 100%;
+    /*float: left;*/
+    position: relative;
+    /*height: 100%;*/
+    /*display: flex;*/
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+}
+
+/*почему закрывает всю область всех project а не каждого по отдельности?*/
+/*
+.project:hover::before {
+    content: '';
+    display: block;
+    width: 285px;
+    height: 237px;
+    background:rgba(173, 160, 116, 0.7);
+    z-index: 0;
+    transition: 0.7s ease-out;
+}
+*/
+
+#portfolio .btn-readmore {
+    height: 47px;
+    width: 182px;
+    /*margin-top: 30px;*/
+    /*164px; размер из фотошоп*/
+    text-transform: uppercase;
+    color: black;
+    font-family: "lato-regular", "Arial", sans-serif;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid black;
+    outline: none;
+    margin-top: 165px;
+}
+
+#portfolio .btn-readmore:hover {
+    background: #ada074;
+    color: #fff;
+    border: 2px solid #ada074;
+    -webkit-transition: 0.7s ease-out;
+    -o-transition: 0.7s ease-out;
+    transition: 0.7s ease-out;
+}
+
+#portfolio a {
+    text-align: center;
+    display: block;
+}
+
+.project-4 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    grid-row: 2 / 4;
+}
+
+/*
+.project-5 {
+    grid-row: 2 / 5;
+    grid-column: 3 / 4;
+}
+*/
+.project-6 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    grid-row: 2 / 4;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3 / 4;
+}
+
+.project-6 img {
+    /*height: 100%;*/
+}
+
+.project-7 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    grid-row: 3 / 5;
+}
+
+.project-8 {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 2;
+    grid-row: 4 / 6;
+}
+
+.project-9 {
+    -ms-grid-row: 6;
+    -ms-grid-row-span: 2;
+    grid-row: 6 / 8;
+}
+
+.project-10 {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 2;
+    grid-row: 4 / 6;
+}
+
+.project-11 {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 3;
+    grid-row: 5 / 8;
+}
+
+/*****************************************************************************
+*********************************SECTION PARTNERS*****************************
+******************************************************************************/
+.partners-background {
+    background: rgba(0, 0, 0, 0.72) url("../img/partners-bg.jpg") 0px 0px fixed no-repeat;
+    background-size: cover;
+    position: relative;
+    /*background-blend-mode: normal;*/
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    /*background: rgba(0, 0, 0, 0.72);*/
+    opacity: 72%;
+}
+
+.partners {
+    width: 100%;
+    height: 400px;
+    /*opacity: 50%;*/
+    position: relative;
+}
+
+/*
+.partners .opacity-layer {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    top: 0;
+    /*(background: rgba(0, 0, 0, 0.72);
+    z-index: 50;
+}
+*/
+.partners h2 {
+    font-family: "lato-light", "Arial", sans-serif;
+    font-size: 30px;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: center;
+    padding-top: 100px;
+    margin: 0;
+    letter-spacing: 1.8px;
+    z-index: 200;
+}
+
+.partners .wrapper_logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 585px;
+    /*padding-left: 670px;*/
+    /*padding-top: 97px;*/
+    -ms-flex-line-pack: end;
+        align-content: flex-end;
+    position: absolute;
+    top: 222px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    z-index: 200;
+}
+
+/********************************************************************
+******************************FOOTER CONTACT*************************
+*********************************************************************/
+#contact {
+    width: 100%;
+    height: 828px;
+    background-color: #fff;
+    position: relative;
+}
+
+#contact h2 {
+    padding-top: 185px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "lato-bold", "Arial", sans-serif;
+    font-size: 34px;
+    font-weight: bold;
+    color: black;
+    letter-spacing: 5.44px;
+}
+
+#contact h2::after {
+    content: "";
+    display: block;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    height: 1px;
+    width: 81px;
+    background-color: black;
+    margin: 47px auto 0px auto;
+    text-align: center;
+}
+
+.wrapper_contact {
+    width: 750px;
+    padding-left: 512px;
+    padding-top: 120px;
+}
+
+#contact label,
+.message {
+    display: block;
+    text-align: left;
+    font-family: "lato-regular", "Arial", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: black;
+    padding-bottom: 20px;
+    letter-spacing: 0.84px;
+}
+
+form {
+    width: 382px;
+    height: 345px;
+    float: left;
+}
+
+.name .mail {
+    width: 160px;
+    height: 66px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 160px;
+    height: 35px;
+    background: #f8f7f7;
+    border: none;
+    border-top: 1px solid black;
+    /*cursor: pointer;*/
+    cursor: text;
+}
+
+/*
+input[type="submit"] {
+    border: none;
+    background: #fff;
+    font-family: "lato-regular", "Arial", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.84px;
+    float: right;
+    margin-top: 23px;
+    outline: none;
+}
+*/
+
+.form-button {
+    cursor: pointer;
+    text-transform: uppercase;
+    color: black;
+    border: none;
+    background: #fff;
+    font-family: "lato-regular", "Arial", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.84px;
+    float: right;
+    margin-top: 23px;
+    outline: none;
+}
+
+.mail {
+    float: right;
+    padding-bottom: 76px;
+}
+
+.name {
+    float: left;
+    padding-bottom: 76px;
+}
+
+.message {
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+textarea {
+    width: 382px;
+    height: 118px;
+    background: #f8f7f7;
+    border: none;
+    border-top: 1px solid black;
+    resize: none;
+}
+
+.txt_contact,
+.icons {
+    display: block;
+    float: right;
+    width: 298px;
+}
+
+.txt_contact p {
+    font-family: "lato-regular", "Arial", sans-serif;
+    font-size: 14px;
+    color: black;
+    text-align: left;
+    letter-spacing: 0.014px;
+    padding-bottom: 38px;
+    line-height: 1.857;
+}
+
+.Tomazs,
+.e-mail {
+    font-weight: bolder;
+}
+
+.icons svg {
+    width: 15px;
+    height: 15px;
+    padding-right: 16px;
+}
+
+.icons svg:hover {
+    -webkit-transition: 0.7s ease-out;
+    -o-transition: 0.7s ease-out;
+    transition: 0.7s ease-out;
+    fill: #ada074;
+}
+
+/**********************************************************************
+*****************************FOOTER COPYRIGHT**************************
+***********************************************************************/
+.copyright {
+    width: 100%;
+    height: 270px;
+    background: #3c3c3c;
+    position: relative;
+}
+
+.footer_menu ul {
+    width: 438px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 743px;
+    margin-top: 43px;
+}
+
+.footer_menu ul a {
+    display: inline;
+    font-family: "sourcesanspro-regular", "Arial", sans-serif;
+    font-size: 14px;
+    color: rgb(164, 164, 164);
+    padding-top: 43px;
+}
+
+.footer_menu ul li {
+    list-style: none;
+}
+
+.footer_menu a {
+    text-decoration: none;
+}
+
+.footer_menu span {
+    text-transform: none;
+}
+
+.footer_menu p {
+    text-transform: capitalize;
+    font-family: "sourcesanspro-light", "Arial", sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+    color: rgb(164, 164, 164);
+    padding-top: 37px;
+}
+
+.bootom_logo {
+    position: absolute;
+    top: 49px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+}
+
+.bottom_logo img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 50px;
+    left: 50%;
+}
