@@ -58,7 +58,7 @@ body {
 
 .container {
     margin: 0px auto;
-    width: 1920px;
+    width: 1440px
 }
 
 /* Блок Header */
@@ -70,16 +70,10 @@ header {
 
 .slider {
     background: url("../img/header-bg.png") #c0c0c0 bottom center;
-    /*z-index:10;*/
     background-repeat: no-repeat;
     background-size: cover;
-    /*background-color: rgb(51, 51, 51);*/
-    /*opacity: 0.502;*/
     width: 100%;
     height: 1080px;
-    /*background-size: contain;*/
-    /*background-size: auto auto;*/
-    /*background-size: 100% 100%;*/
     z-index: -10;
     background-attachment: fixed;
 }
@@ -97,7 +91,6 @@ header {
 .logo {
     height: 706px;
     width: 437px;
-    /*На макете ширина блока Лого 430px, Название не вмещается*/
     margin: 0 auto;
     padding-top: 221px;
     position: relative;
@@ -187,28 +180,6 @@ p {
     transition: 0.7s ease-out;
 }
 
-/*
-button[type="button"] {
-    height: 47px;
-    width: 182px;
-    margin-top: 162px;
-    text-transform: uppercase;
-    color: #fff;
-    font-family: "lato-regular", "Arial", sans-serif;
-    font-size: 16px;
-    background: transparent;
-    border: 2px solid #fff;
-    outline: none;
-}
-*/
-/*
-button[type="button"]:hover {
-    color: rgb(173, 160, 116); 
-    background: #fff;
-    border-color: rgb(173, 160, 116); 
-}
-*/
-
 button[type="button"]:active {
     color: #3c3c3c;
     background: #ada074;
@@ -217,7 +188,6 @@ button[type="button"]:active {
 .arrow-down {
     padding-top: 30px;
     display: inline;
-    /*animation: move 1.5s ease-out 0.8s infinite;*/
     animation: move 1.5s ease-out 0.7s infinite;
     opacity: 0;
 }
@@ -240,7 +210,6 @@ button[type="button"]:active {
     100% {
         opacity: 1;
         transform: translateY(40px);
-        /* scale3d(0.5, 0.5, 0.5);*/
     }
 }
 
@@ -253,14 +222,13 @@ nav {
     align-items: center;
     display: flex;
     border-bottom: 1px solid #f2f2f2;
-    /*position: fixed;
-    z-index: 100;*/
 }
 
 nav ul {
     width: 388px;
     align-self: center;
     padding-left: 420px;
+    padding-right: 50px;
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -269,7 +237,6 @@ nav ul {
 nav li {
     text-transform: uppercase;
     font-size: 15px;
-    /*font-family: "lato-bold", "Arial", sans-serif;*/
     font-weight: bold;
     display: inline-block;
     font-family: "14775", "Arial", sans-serif;
@@ -291,7 +258,6 @@ nav a:hover {
 
 #onepage {
     padding-left: 510px;
-    /*font-family: "sourcesanspro-bold", "Arial", sans-serif;*/
     font-size: 26px;
     font-weight: bold;
     color: #3c3c3c;
@@ -309,9 +275,7 @@ nav a:hover {
 ******************************SECTION ABOUT US*********************************
 *******************************************************************************/
 #about {
-    /*padding-top: 80px;*/
     width: 100%;
-    /*height: 750px;*/
     background: #fff;
     position: relative;
 }
@@ -355,8 +319,8 @@ nav a:hover {
     align-content: center;
     align-items: flex-end;
     position: relative;
-    padding-left: 510px;
     padding-top: 76px;
+    margin: 0 auto;
 }
 
 #about .design_type {
@@ -386,9 +350,7 @@ nav a:hover {
 /*если иконки  responsive, minimalist, free вставлять как обычные img формата png*/
 .design_type img {
     width: 58px;
-    /*100px*/
     height: 53px;
-    /*100px*/
     position: absolute;
     top: 20%;
     left: 20%;
@@ -398,54 +360,6 @@ nav a:hover {
     text-align: center;
 }
 
-/*
-.desighn_type img::after {
-    content: "";
-    width: 100px;             
-    height: 100px;            
-    border-radius: 50%;
-    background: transparent;
-    border: 2px solid rgb(240, 240, 240);
-    position: absolute;
-    display: block;
-    cursor: pointer;
-    margin: 0 auto;
-}
-.desighn_type img:hover {
-    border: 2px solid #ada074;
-    transition: 0.3s ease-out;
-}
-
-
-/*если иконки responsive, minimalist, free будут вставляться как svg формат */
-/*
-.about svg {
-	fill: #ada074;
-	align-self: flex-start;
-	display: block;
-	text-align: center;
-    margin: 0 auto;
-    border-radius: 150px;
-    border: 2px solid rgb(240, 240, 240);
-}
-*/
-
-/* если иконки responsive, minimalist, free - вставлять как svg*/
-/*
-.desighn_type svg {
-    padding-top: 30px;
-    /*position: absolute;
-    display: block;
-    align-items: center;
-	fill: #ada074;
-	align-self: flex-start;
-	/*display: block;
-	text-align: center;
-    margin: 0 auto;
-}
-*/
-/* если иконки то для них применяется псевдоэлемент ::before - окружность-обводка спереди иконки */
-/*
 .desighn_type::before {
     content: "";
     width: 88px;
@@ -457,9 +371,9 @@ nav a:hover {
     display: block;
     cursor: pointer;
     margin: 0 auto;
-} 
-*/
-.design_type span {
+}
+
+*/ .design_type span {
     padding-top: 57px;
     font-family: "lato-regular", "Arial", sans-serif;
     font-size: 26px;
@@ -486,12 +400,8 @@ nav a:hover {
 #portfolio {
     width: 100%;
     height: 1636px;
-    /*background: #f3f3f3;*/
-    /*background-color: lightgreen;*/
     background-color: #f3f3f3;
     position: relative;
-    /*padding-left: 510px;
-    padding-right: 510px;*/
 }
 
 #portfolio h2 {
@@ -519,36 +429,23 @@ nav a:hover {
 .grid {
     margin: 0 auto;
     margin-top: 76px;
-    /*display: flex;*/
-    /*flex-wrap: wrap;
-    align-items: flex-start;*/
-    /*border-left-style: solid #f3f3f3 510px;
-    border-right-style: solid #f3f3f3 510px;*/
     width: 900px;
     position: relative;
     display: grid;
     grid-template-rows: 200px 200px 100px 100px 100px 100px 100px;
     grid-template-columns: repeat(2, 1fr) 285px;
     grid-gap: 15px;
-    /*grid-template-rows: repeat(3, 1fr);*/
     justify-items: center;
     align-items: center;
 }
 
 .project {
-    /*width: 285px;*/
-    /*margin: 0 15px 15px 0;
-    float: left;
-    position: relative;
-    /*height: 100%;*/
     display: flex;
     position: relative;
 }
 
 .project:hover {
     width: 285px;
-    /*height: 237px;*/
-    /*position: absolute;*/
     background: rgba(173, 160, 116, 0.7);
     transition: 0.7s ease-out;
 }
@@ -587,21 +484,9 @@ nav a:hover {
     transition: 0.7s ease-out;
 }
 
-/*
-.progect:hover {
-    opacity: var(--opacity);
-}
-
-.progect:hover>.no-text {
-    --opacity: 0.5;
-}
-*/
 .grid img {
     width: 100%;
-    /*float: left;*/
     position: relative;
-    /*height: 100%;*/
-    /*display: flex;*/
     align-items: center;
     justify-content: center;
     margin: 0;
@@ -609,24 +494,9 @@ nav a:hover {
     box-sizing: content-box;
 }
 
-/*почему закрывает всю область всех project а не каждого по отдельности?*/
-/*
-.project:hover::before {
-    content: '';
-    display: block;
-    width: 285px;
-    height: 237px;
-    background:rgba(173, 160, 116, 0.7);
-    z-index: 0;
-    transition: 0.7s ease-out;
-}
-*/
-
 #portfolio .btn-readmore {
     height: 47px;
     width: 182px;
-    /*margin-top: 30px;*/
-    /*164px; размер из фотошоп*/
     text-transform: uppercase;
     color: black;
     font-family: "lato-regular", "Arial", sans-serif;
@@ -653,19 +523,9 @@ nav a:hover {
     grid-row: 2 / 4;
 }
 
-/*
-.project-5 {
-    grid-row: 2 / 5;
-    grid-column: 3 / 4;
-}
-*/
 .project-6 {
     grid-row: 2 / 4;
     grid-column: 3 / 4;
-}
-
-.project-6 img {
-    /*height: 100%;*/
 }
 
 .project-7 {
@@ -695,36 +555,19 @@ nav a:hover {
     background: rgba(0, 0, 0, 0.72) url("../img/partners-bg.jpg") 0px 0px no-repeat;
     background-size: cover;
     position: relative;
-    /*background-blend-mode: normal;*/
     z-index: -100;
     width: 100%;
     height: 100%;
-    /*background: rgba(0, 0, 0, 0.72);*/
     opacity: 72%;
     background-attachment: fixed;
-    /*
-    fixed = parallax
-    scroll = normal
-    */
 }
 
 .partners {
     width: 100%;
     height: 400px;
-    /*opacity: 50%;*/
     position: relative;
 }
 
-/*
-.partners .opacity-layer {
-    position: absolute;
-    width: 100%;
-    height: 400px;
-    top: 0;
-    /*(background: rgba(0, 0, 0, 0.72);
-    z-index: 50;
-}
-*/
 .partners h2 {
     font-family: "lato-light", "Arial", sans-serif;
     font-size: 30px;
@@ -742,8 +585,6 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
     width: 585px;
-    /*padding-left: 670px;*/
-    /*padding-top: 97px;*/
     align-content: flex-end;
     position: absolute;
     top: 222px;
@@ -786,8 +627,8 @@ nav a:hover {
 
 .wrapper_contact {
     width: 750px;
-    padding-left: 512px;
     padding-top: 120px;
+    margin: 0 auto;
 }
 
 #contact label,
@@ -818,9 +659,8 @@ input[type="email"] {
     width: 160px;
     height: 35px;
     background: #f8f7f7;
-    border: none;
+    border: 1px solid transparent;
     border-top: 1px solid black;
-    /*cursor: pointer;*/
     cursor: text;
     outline: none;
 }
@@ -830,20 +670,6 @@ input[type="email"] {
 .form-input:focus {
     border: 1px solid black;
 }
-
-/*
-input[type="submit"] {
-    border: none;
-    background: #fff;
-    font-family: "lato-regular", "Arial", sans-serif;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 0.84px;
-    float: right;
-    margin-top: 23px;
-    outline: none;
-}
-*/
 
 .form-button {
     cursor: pointer;
@@ -874,13 +700,14 @@ input[type="submit"] {
     text-align: left;
     padding-top: 20px;
     padding-bottom: 20px;
+    clear: both;
 }
 
 textarea {
     width: 382px;
     height: 118px;
     background: #f8f7f7;
-    border: none;
+    border: 1px solid transparent;
     border-top: 1px solid black;
     resize: none;
     outline: none;
@@ -933,8 +760,7 @@ textarea {
     width: 438px;
     justify-content: space-between;
     display: flex;
-    padding-left: 743px;
-    margin-top: 43px;
+    margin: 43px auto 0;
 }
 
 .footer_menu ul a {
