@@ -373,14 +373,14 @@ nav a:hover {
     margin: 0 auto;
 }
 
-*/ .design_type span {
+.design_title {
     padding-top: 57px;
     font-family: "lato-regular", "Arial", sans-serif;
     font-size: 26px;
     letter-spacing: 4.16px;
 }
 
-.design_type span>a {
+.design_title>a {
     color: black;
     text-transform: uppercase;
     text-decoration: none;
